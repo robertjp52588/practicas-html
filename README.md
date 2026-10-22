@@ -8,3 +8,5 @@ _web_
   <li>JS</li>
 </ul>
 <a href="https://www.ceina.com/">Centro académico</a>
+<p>Igualada</p>
+
