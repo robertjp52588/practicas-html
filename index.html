@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva GTA VI</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    
+    <div class="landing">
+
+    <header>
+
+    <nav>
+
+        <a href="#">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <a href="#">GTA V</a>
+        <a href="#">GTA IV</a>
+        <a href="#">GTA SA</a>
+        <a href="#">GTA VC</a>
+        <a href="#">GTA III</a>
+
+    </nav>
+    </header>
+        
+
+            <main class="contenedor">
+                <article class="izquierda">
+
+                    <h1> GRAND THEFT AUTO VI </h1>
+                    <h2>Reserva ya el nuevo juego</h2>
+
+                    <video src="video/trailer.mp4" autoplay muted loop controls playsinline></video>
+
+                    <p>En las soleadas calles de Vice City, donde el lujo y el crimen conviven bajo el brillo de los neones, dos delincuentes buscan una oportunidad para cambiar sus vidas. Sin embargo, una serie de decisiones arriesgadas los arrastrará a una espiral de atracos, traiciones y persecuciones en un estado donde la ambición puede convertirte en una leyenda... o acabar contigo.</p>
+                </article>
+
+                <article class="derecha">
+
+                    <h3>Rellena los datos y reserva el juego:</h3>
+                    <form action="formulari">
+                        
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellidos" required minlength="3" autofocus>
+                        <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+                        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required minlength="8" >
+
+                        <select name="juegofavorito" id="juegofavorito">
+                            <option value="juegofav">Cuál es tu juego favorito?</option>
+                            <option value="gtav"> Grand Theft Auto V </option>
+                            <option value="gtav"> Grand Theft Auto IV </option>
+                            <option value="gtav"> Grand Theft Auto: San Andreas </option>
+                            <option value="gtav"> Grand Theft Auto: Vice City </option>
+                            <option value="gtav"> Grand Theft Auto: III </option>
+
+                            <optgroup label="Juegos adicionales:">
+                    
+                                <option value="gtav"> Grand Theft Auto: TBOGT and L&D </option>
+                                <option value="gtav"> Grand Theft Auto: Chinatown Wars </option>
+                                <option value="gtav"> Grand Theft Auto: Vice City Stories </option>
+                                <option value="gtav"> Grand Theft Auto: Liberty City Stories </option>
+                                                        
+                            </optgroup>
+                        </select>
+
+                        <button type="submit"> Enviar </button>
+                    </form>
+                </article>
+
+
+            
+        </div>
+    </div>
+    
+</body>
+</html>

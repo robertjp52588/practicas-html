@@ -1,0 +1,242 @@
+@font-face {
+    font-family: pricedown;
+    src: url(fonts/pricedown.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body{
+            margin: 0px auto;
+            padding: 0px auto;
+
+            background-image: url(img/fondo.jpg);
+            background-size: cover;
+
+        }
+
+        header{
+            width: 100%;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.658);
+
+            backdrop-filter: blur(1px);
+
+        }
+
+        nav{
+             display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-family: pricedown;
+            font-size: 1.8em;
+
+            transition: 0.8s;
+        }
+        
+        nav a:hover{
+            transform: scale(1.2);
+            color: rgb(251, 139, 255);
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+        }
+
+        nav img{
+            width: 40px;
+
+        }
+
+
+        /*Caja central*/
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.473);
+            backdrop-filter: blur(1px);
+
+            padding: 15px;
+            margin: 50px;
+
+            animation: entrada 3s ease;
+        }
+
+        @keyframes entrada{
+
+            from{
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to{
+                opacity: 5;
+                transform: translateY(0);
+            }
+        }
+
+        .izquierda, .derecha{
+            width: 50%;
+            flex: 1;
+            text-align: center;
+        }
+
+        .derecha{
+            flex-direction: column;
+            align-content: center;
+        }
+
+        .derecha h3{
+            font-size: 2em;
+        }
+
+        .izquierda h1{
+            font-family: pricedown;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+            color: white;
+            font-size: 4em;
+
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .izquierda h2, .derecha h3{ 
+        font-family: "Montserrat", sans-serif;       
+        font-size: 1.3 em;
+            color: white;
+        }
+
+        .izquierda p{
+            font-family: "Montserrat", sans-serif;
+            font-size: 1em;
+            color: white;
+
+            background-color: rgba(56, 56, 56, 0.781);
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+
+            
+        }
+
+        input, select{
+
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.658);
+            color: white;
+            border-radius: 10px;
+            border: 1px solid black;
+            font-family: "Montserrat", sans-serif;
+            
+
+        }
+
+        form button{
+            width: 500px;
+            align-self: center;
+            margin: 10px;
+            padding: 20px;
+            font-size: 1.5em;
+            font-family: pricedown;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            transition: 1s;
+
+        }
+
+        form button:hover{
+            transform: scale(1.2);
+            background: white;
+            color: black;
+        }
+
+        input:valid{
+            border-color: green;
+            box-shadow: 0px 0px 15px green;
+        }
+
+        input:invalid{
+            border-color: red;
+            box-shadow: 0px 0px 15px red;
+        }
+
+        video{
+            box-shadow: 0px 0px 50px black;
+        }
+
+        @media (max-width: 768px) {
+            
+            
+            body{
+                animation: fondo 120s infinite;
+            }
+
+            @keyframes fondo {
+
+                0%{
+                    background-position-x: 0%;
+                }
+
+                25%{
+                    background-position-x: 50%;
+                }
+
+                50%{
+                    background-position-x: 100%;
+                }
+
+                75%{
+                    background-position-x: 50%;
+                }
+
+                100%{
+                    background-position: 0%;
+                }
+                
+            }
+            .contenedor{
+                flex-direction: column;
+                align-items: center;
+                border-radius: 0%;
+                
+                margin: 0px;
+                
+            }
+
+            .izquierda h1{
+                font-size: 3.5em;
+                text-wrap: nowrap;
+                text-align: center;
+                margin-left: -40px;
+
+            }
+
+            .izquierda p{
+                margin-left: -205px;
+                width: 768px;
+                font-size: 1.5em;
+            }
+            video{
+                
+                margin-left: -125px;
+            }
+
+            button{
+                margin-bottom: 100px;
+            }
+        }
+
+    
